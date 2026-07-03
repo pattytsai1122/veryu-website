@@ -125,6 +125,24 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
 .foot-logo img { width: 28px; height: 28px; object-fit: contain; }
 .foot-logo span { font-family: Arial, sans-serif; font-weight: 700; font-size: 15px; color: var(--text); letter-spacing: .3px; }
 @media(max-width:900px) { .layout { grid-template-columns: 1fr; } .booking-col { position: static; } .gallery-grid { grid-template-columns: repeat(2,1fr); } .gal-item:first-child { grid-column: span 2; } .nav-links { display: none; } }
+@media (max-width: 480px) {
+  nav { padding: 0 1rem; height: 56px; }
+  .nav-logo-box img { width: 34px; height: 34px; }
+  .nav-logo-box span { font-size: 14px; }
+  .breadcrumb { padding: 1rem 1rem; font-size: 12px; }
+  .hero-media { padding: 0 1rem; margin-bottom: 1.75rem; }
+  .hero-banner { aspect-ratio: 4/3; }
+  .layout { padding: 0 1rem 3rem; gap: 2rem; }
+  .meta-row { gap: .75rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; }
+  .gallery-grid { grid-template-rows: 170px 120px; grid-auto-rows: 120px; }
+  .booking-card { padding: 1.25rem; }
+  .price-main { font-size: 1.9rem; }
+  .scroll-row { gap: .625rem; }
+  .sc-card { width: 190px; height: 260px; }
+  footer { padding: 2rem 1rem; }
+  .foot-bottom { flex-direction: column; gap: .75rem; text-align: center; }
+}
+
 </style>
 </head>
 <body>

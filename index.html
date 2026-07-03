@@ -425,6 +425,35 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
   .foot-inner { grid-template-columns: 1fr 1fr; }
   .stats-inner { grid-template-columns: repeat(2,1fr); }
 }
+
+@media (max-width: 480px) {
+  nav { padding: 0 1rem; height: 56px; }
+  .nav-logo-box img { width: 34px; height: 34px; }
+  .nav-logo-box span { font-size: 14px; }
+  .nav-right { gap: .5rem; }
+  .btn-ghost { padding: 6px 10px; font-size: 11.5px; }
+  .btn-purple { padding: 7px 13px; font-size: 12px; }
+  .hero { padding: 44px 1.25rem 32px; }
+  h1.hero-title { font-size: clamp(1.9rem, 8.5vw, 2.4rem); }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .btn-primary, .btn-secondary { justify-content: center; }
+  .phone-frame { width: 220px; }
+  .filter-wrap { padding: 1.25rem 1rem; }
+  .section { padding: 2.25rem 1rem; }
+  .sec-header { flex-wrap: wrap; gap: .75rem; }
+  .grid { display: flex; flex-direction: column; }
+  .card { height: 230px; }
+  .card-gallery .card-title { font-size: 1.15rem; }
+  .curated-strip { padding: 1.5rem 1rem; }
+  .stats { padding: 1.75rem 1.25rem; }
+  .stats-inner { gap: 1.25rem; }
+  .stat-n { font-size: 2rem; }
+  footer { padding: 2.25rem 1rem; }
+  .foot-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+  .su-box { padding: 2rem 1.5rem 1.5rem; }
+  .ob-box { padding: 1.75rem 1.25rem; }
+  .ob-options { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
